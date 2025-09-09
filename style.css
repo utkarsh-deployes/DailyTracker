@@ -1,0 +1,116 @@
+/* --- Global Styles & Font Import --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+/* --- Main To-Do App Container --- */
+.container {
+    background: white;
+    width: 100%;
+    max-width: 500px;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #444;
+}
+
+/* --- Input Form --- */
+#task-form {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#task-input {
+    flex-grow: 1; /* Takes up all available space */
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+#task-form button {
+    background-color: #ef4444; /* A nice red color */
+    color: white;
+    border: none;
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#task-form button:hover {
+    background-color: #dc2626; /* A darker red on hover */
+}
+
+/* --- Task List --- */
+#task-list {
+    list-style: none; /* Removes the default bullet points */
+}
+
+#task-list li {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 0.25rem;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.2s;
+}
+
+#task-list li:last-child {
+    border-bottom: none;
+}
+
+#task-list li span {
+    flex-grow: 1;
+    margin: 0 1rem;
+}
+
+/* Style for completed tasks (we will add this class with JavaScript) */
+#task-list li.completed span {
+    text-decoration: line-through;
+    color: #999;
+}
+
+/* Buttons inside each task item */
+#task-list li button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 0.25rem;
+}
+
+.complete-btn {
+    color: #888;
+}
+
+/* Style for the complete button when task is done */
+#task-list li.completed .complete-btn {
+    color: #22c55e; /* Green color */
+}
+
+.delete-btn {
+    color: #ef4444; /* Red color */
+}
