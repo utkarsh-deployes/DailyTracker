@@ -3,7 +3,7 @@
 A minimalist full-stack web application built to demonstrate the fundamental interaction between a frontend, a backend API, and a database. This project provides a complete CRUD (Create, Read, Update, Delete) experience for managing tasks.
 
 ---
-## ## Features
+## Features
 
 * **Create**: Add new tasks to the list.
 * **Read**: View all existing tasks on page load.
@@ -11,14 +11,14 @@ A minimalist full-stack web application built to demonstrate the fundamental int
 * **Delete**: Remove tasks from the list.
 
 ---
-## ## Technology Stack
+## Technology Stack
 
 * **Frontend**: Vanilla HTML, CSS, and JavaScript
 * **Backend**: Node.js with Express.js
 * **Database**: SQLite
 
 ---
-## ## Setup and Installation
+## Setup and Installation
 
 To run this project locally, follow these steps:
 
@@ -44,7 +44,7 @@ To run this project locally, follow these steps:
     Open the `index.html` file in your web browser.
 
 ---
-## ## API Endpoints
+## API Endpoints
 
 The backend provides the following RESTful API endpoints:
 
