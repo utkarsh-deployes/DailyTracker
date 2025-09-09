@@ -16,7 +16,7 @@ const taskList = document.getElementById('task-list');
 const logoutBtn = document.getElementById('logout-btn');
 
 // --- 2. API BASE URL ---
-const apiUrl = 'http://localhost:8080'; // Your backend server URL
+const apiUrl = 'https://dailytracker-5k3b.onrender.com'; // Your backend server URL
 
 // --- 3. STATE MANAGEMENT & VIEW TOGGLING ---
 
