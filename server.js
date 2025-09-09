@@ -2,11 +2,15 @@
 const express = require('express');
 const cors = require('cors');
 const sqlite3 = require('sqlite3').verbose();
+const path = require('path'); // ** NEW: Import the path module
 
 // 2. APP SETUP
 const app = express();
 app.use(cors());
 app.use(express.json());
+
+// ** NEW: Serve static frontend files (HTML, CSS, JS) **
+app.use(express.static(path.join(__dirname)));
 
 // 3. DATABASE CONNECTION
 const db = new sqlite3.Database('./tasks.db', (err) => {

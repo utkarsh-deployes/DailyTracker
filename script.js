@@ -4,7 +4,7 @@ const taskInput = document.getElementById('task-input');
 const taskList = document.getElementById('task-list');
 
 // --- 2. DEFINE THE API URL ---
-const apiUrl = 'http://localhost:8080/tasks';
+const apiUrl = 'https://dailytracker-5k3b.onrender.com/tasks';
 
 // --- 3. FUNCTION TO FETCH AND RENDER TASKS ---
 const renderTasks = async () => {
